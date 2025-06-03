@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))) # For locating your directory
 
-from FTLE.Curved.CurvedSurfaceMain import FTLE_mesh # The primary function used for FTLE mesh calculations
-from FTLE.Curved.utilities import make_vector_field_video
+from FTLE.Code.CurvedSurfaceMain import FTLE_mesh # The primary function used for FTLE mesh calculations
+from FTLE.Code.utilities import make_vector_field_video
 import h5py # for .h5 files
 
 
@@ -43,7 +43,7 @@ def load_mesh_data_h5(h5_file_path):
         'total_time': total_time
     }
 
-file_path = os.path.join(os.path.dirname(__file__), 'growing_sphere.h5') # fetches the path to the example data contained within the Examples folder
+file_path = os.path.join(os.path.dirname(__file__), rf'Data/growing_sphere.h5') # fetches the path to the example data contained within the Examples folder
 
 
 """
